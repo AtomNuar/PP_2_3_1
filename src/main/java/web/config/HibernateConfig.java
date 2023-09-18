@@ -19,8 +19,8 @@ import java.util.Properties;
 @PropertySource("classpath:db.properties")
 @EnableTransactionManagement
 @EnableJpaRepositories("web.dao")
-
 public class HibernateConfig {
+
     @Autowired
     private Environment env;
 

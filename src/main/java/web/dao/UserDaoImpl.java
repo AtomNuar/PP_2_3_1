@@ -9,10 +9,9 @@ import java.util.List;
 
 @Repository
 public class UserDaoImpl implements UserDao {
-    @PersistenceContext
-    EntityManager entityManager;
-    private List<User> users;
 
+    @PersistenceContext
+    private EntityManager entityManager;
 
     @Override
     public void saveUser(User user) {
